@@ -13,11 +13,11 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func PrintListNode(listNode *ListNode)  {
+func (this *ListNode) PrintListNode()  {
 	fmt.Print("[")
-	for listNode != nil {
-		fmt.Print(" ",listNode.Val)
-		listNode = listNode.Next
+	for this != nil {
+		fmt.Print(" ",this.Val)
+		this = this.Next
 	}
 	fmt.Print(" ]")
 	fmt.Println()
